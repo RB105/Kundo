@@ -1,0 +1,39 @@
+name: kundo
+description: "Kundo — a local-first to-do app with an iOS look, inspired by Microsoft To Do."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management.
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.0
+
+  # Local-only persistence: everything lives on the device.
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  intl: ^0.20.2
+
+  # Background photos: the system gallery on mobile, a file dialog on desktop.
+  image_picker: ^1.1.2
+  file_selector: ^1.0.3
+  # Picked photos are copied into the app's own support directory.
+  path_provider: ^2.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
